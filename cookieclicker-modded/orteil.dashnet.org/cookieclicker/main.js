@@ -1240,11 +1240,11 @@ Game.local=(!location.hostname || location.hostname==='localhost' || location.ho
 if (App) Game.local=true;
 Game.resPath='';
 if (!App && !Game.local && window.location.href.indexOf('orteil.dashnet.org')!=-1)
-{
+/*{
 	Game.resPath=('//'+location.host+location.pathname).replace('orteil.dashnet.org','cdn.dashnet.org');
 	if (Game.resPath.substr(-1)!='/') Game.resPath+='/';
-}
-
+}*/
+// Above code commented out by Joshua Harding
 
 Game.Launch=function()
 {
